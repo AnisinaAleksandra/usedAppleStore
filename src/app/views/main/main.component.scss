@@ -1,0 +1,43 @@
+.main {
+  width: 100%;
+  .img-main {
+    position: relative;
+    img {
+      width: 100vw;
+    }
+    .main-service-text {
+      position: absolute;
+      top: 25%;
+      display: block;
+      width: 100%;
+      .text {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 800;
+        font-size: 56px;
+        line-height: 120%;
+        text-align: center;
+        width: 50%;
+    display: block;
+    margin: 0 auto;
+      }
+    }
+  }
+  .my-container {
+    position: relative;
+  }
+}
+
+
+@media screen and (max-width: 1000px) {
+    .main {
+      .img-main {
+        width: 900px;
+        .main-service-text{
+            .text{
+                font-size: 30px;
+            }
+        }
+      }
+    }
+  }

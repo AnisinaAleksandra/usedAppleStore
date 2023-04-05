@@ -1,0 +1,94 @@
+<ng-container *ngIf="display$ | async as display">
+  <section [class.open]="display === 'open'" (click)="close()">
+    <div (click)="$event.stopPropagation()">
+      <button class="close" type="button" (click)="close()">X</button>
+
+      <div class="modal-body">
+        <div class="modal-title">{{ modalTitle }}</div>
+        <form
+          class="row g-3"
+          #form
+          novalidate
+          [formGroup]="orderForm"
+        >
+         
+          <input
+            type="text"
+            class="form-control"
+            id="inputName"
+            name="name"
+            placeholder="Ваше имя"
+            formControlName="name"
+          />
+          <div
+            class="invalid-errors"
+            *ngIf="orderForm!.get('name')?.invalid 
+          && (orderForm.get('name')?.touched || orderForm.get('name')?.dirty)
+          && (orderForm.get('name')?.errors?.['required']|| orderForm.get('name')?.errors?.['pattern'])"
+          >
+            <span
+              class="error-text"
+              *ngIf="orderForm.get('name')?.errors?.['required']"
+              >Необходимо ввести имя</span
+            >
+            <span
+              class="error-text"
+              *ngIf="orderForm.get('name')?.errors?.['pattern']"
+              >Можно ввести только буквы</span
+            >
+          </div>
+          <input
+            id="inputPhone"
+            name="phone"
+            formControlName="phone"
+            class="form-control" 
+            placeholder="Ваш номер телефона"
+            
+          />
+
+          <div
+            class="invalid-errors"
+            *ngIf="orderForm!.get('phone')!.invalid 
+      && (orderForm.get('phone')?.touched || orderForm.get('phone')?.dirty)
+      && (orderForm.get('phone')?.errors?.['required']|| orderForm.get('phone')?.errors?.['pattern'] || orderForm.get('phone')?.errors?.['minlength'])"
+          >
+            <span
+              class="error-text"
+              *ngIf="orderForm.get('phone')?.errors?.['required']"
+              >Необходимо ввести телефон</span
+            >
+
+            <span
+              class="error-text"
+              *ngIf="orderForm.get('phone')?.errors?.['minlength']"
+              >Колличество цифр должно быть 11</span
+            >
+            <br />
+            <span
+              class="error-text"
+              *ngIf="orderForm.get('phone')?.errors?.['pattern']"
+              >Можно вводить только цифры и '+'</span
+            >
+          </div>
+        </form>
+       
+      </div>
+      <div class="modal-footer d-flex justify-content-center">
+        <button
+          type="button"
+          class="btn"
+          (click)="sendOrder()"
+        >
+          {{ titleButton }}
+        </button>
+
+        <button
+        (click)="close()"
+          type="button"
+          class="btn-ok"
+        >
+          Окей
+        </button>
+      </div>    </div>
+  </section>
+</ng-container>
