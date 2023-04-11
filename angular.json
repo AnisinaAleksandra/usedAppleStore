@@ -30,9 +30,13 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/swiper/swiper-bundle.css",
+              "node_modules/swiper/swiper.scss",
               "src/assets/styles/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/chart.js/dist/chart.js"
+            ]
           },
           "configurations": {
             "production": {

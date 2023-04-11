@@ -1,4 +1,5 @@
 section {
+  z-index: 99999;
   visibility: hidden;
   opacity: 0;
 
@@ -18,21 +19,66 @@ section {
   background: rgba(0, 0, 0, 0.2);
   transition: opacity 250ms ease-in;
 
-  > div {
+  .modal-container {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 
-    height: 200px;
-    width: 300px;
+    width: 400px;
 
     background: white;
-    padding: 64px;
-
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-left: 15px;
     border-radius: 8px;
 
     box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.1);
+    .modal-close {
+      display: block;
+      text-align: end;
+    }
+
+    .modal-body {
+      .modal-title {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .form-control {
+        border: none;
+        .form-control-input {
+          padding: 14px 0 14px 30px;
+          width: 100%;
+          background: #ffffff;
+          border: 1px solid #3162f5;
+          border-radius: 5px;
+          margin-bottom: 15px;
+          &::placeholder {
+            font-family: "Montserrat";
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 130%;
+            color: #a8aba7;
+          }
+        }
+        
+      }
+    }
+    .modal-footer {
+      display: flex;
+      justify-content: center;
+      border: none;
+      .btn {
+        width: 180px;
+        height: 50px;
+        left: 110px;
+        top: 448px;
+        color: white;
+        background: #1b6299;
+        border-radius: 5px;
+        border: none;
+      }
+    }
   }
 
   button.close {

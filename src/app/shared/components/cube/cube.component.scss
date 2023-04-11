@@ -1,0 +1,20 @@
+@import "swiper/css";
+
+.cube-container {
+  width: 500px;
+  height: 350px;
+  .swiper {
+    width: 450px;
+    padding: 20px 90px 90px 90px!important;
+    .swiper-slide {
+      width: 80%;
+      background-position: center;
+      background-size: cover;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+    }
+  }
+}

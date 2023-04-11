@@ -7,7 +7,7 @@ import { Observable, BehaviorSubject } from 'rxjs';
 })
 export class ModalService {
   private display: BehaviorSubject<'open' | 'close'> = new BehaviorSubject<'open' | 'close'>(
-    'open'
+    'close'
   );
   watch(): Observable<'open' | 'close'> {
     return this.display.asObservable();

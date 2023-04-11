@@ -1,0 +1,128 @@
+*,
+*::befor *::after {
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+  line-height: 1.6;
+  background: rgb(44, 49, 53);
+  font-family: Arial, san-serif;
+}
+
+.my-card {
+  color: white;
+  background-size: cover;
+  padding: 11rem 0 0;
+  max-width: 35ch;
+  border-radius: 0.7rem;
+  overflow: hidden;
+  border-style: solid;
+  border-width: 2px;
+position: relative;
+  transition: transform 500ms ease;
+  height: 385px;
+  width: 330px;
+margin: 12px;
+  &:hover,
+  &:focus-within {
+    transform: scale(1.13);
+  }
+  .my-card-content {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 1.9rem;
+    background: linear-gradient(
+      hsl(0 0% 0% / 0),
+      hsl(20 0% 0% / 0.3) 20%,
+      hsl(0 0% 0% / 1)
+    );
+    .my-card-title {
+      position: relative;
+      width: max-content;
+      // need this for help to lineup
+      // (o)utline: (px? solid? red?) (delete after)
+      &::after {
+        content: "";
+        position: absolute;
+        background: var(#43cdc4);
+        height: 4px;
+        width: calc(100% + 1.5rem);
+        left: calc(1.5rem * -1);
+        bottom: -1px;
+
+        transform-origin: left;
+        transition: transform 500ms ease;
+      }
+    }
+    .my-card-body {
+      color: rgb(255 255 255 / 0.9);
+      width: 96%;
+    }
+    .button {
+      cursor: pointer;
+      display: inline-block;
+      text-decoration: none;
+      color: rgb(44, 49, 53);
+      background-color: #43cdc4;
+      padding: 0.5em 1.25em;
+      border-radius: 0.25rem;
+      border: 10px;
+      &:hover,
+      &:focus {
+        background-color: white;
+      }
+    }
+  }
+}
+
+.my-card:hover .my-card-title::after,
+.my-card:focus-within .my-card-title::after {
+  transform: scaleX(1);
+}
+
+@media (hover) {
+  .my-card-content {
+    transform: translateY(65%);
+    transition: transform 500ms ease;
+  }
+
+  .my-card:hover .my-card-content,
+  .my-card:focus-within .my-card-content {
+    transform: translateY(0%);
+    transition-delay: 500ms;
+  }
+
+  .my-card:focus-within .my-card-content {
+    transition-duration: 0ms;
+  }
+
+  .my-card-content > *:not(.my-card-title) {
+    opacity: 0;
+    transition: opacity 500ms linear;
+  }
+
+  .my-card:hover .my-card-content > *:not(.my-card-title),
+  .my-card:focus-within .my-card-content > *:not(.my-card-title) {
+    opacity: 1;
+    transition-delay: 1000ms;
+  }
+
+  .my-card-title::after {
+    transform: scaleX(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+    transition-delay: 0ms !important;
+  }
+}
