@@ -13,6 +13,6 @@ export class ServiceCardComponent {
   };
   imageFolderPath: string = '';
   ngOnInit(): void {
-    this.imageFolderPath = `/assets/images/${this.item!.image}`;
+    this.imageFolderPath = `assets/images/${this.item!.image}`;
   }
 }
