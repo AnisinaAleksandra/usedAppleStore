@@ -1,94 +1,88 @@
 .main {
   width: 100%;
   background-color: #f2f6fa;
-
-  .img-main {
-    position: relative;
-    img {
-      width: 100vw;
-    }
-    .main-service-text {
-      position: absolute;
+  .main-service-text {
+    background-image: url("/assets/images/large-phone.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 555px;
+    padding-top: 25px;
+    .text {
+      font-weight: 800;
+      text-align: center;
+      width: 50%;
+      z-index: 5;
+      display: block;
+      margin: 0 auto;
+      position: relative;
       top: 25%;
-      display: flex;
-      justify-content: center;
-      width: 100%;
-      .text {
-        font-weight: 800;
-        text-align: center;
-        width: 50%;
-        z-index: 5;
-        font-family: "Montserrat", sans-serif;
-        color: rgb(0, 0, 0);
-        font-size: 32px;
-        font-weight: 200;
-        letter-spacing: 1.65px;
-        opacity: 0;
-        animation-name: floatin;
-        animation-duration: 1s;
-        animation-delay: 0.5s;
-        animation-fill-mode: forwards;
-        .call-me-button {
-          button {
-            -moz-box-shadow: 0px 10px 14px -7px #276873;
-            -webkit-box-shadow: 0px 10px 14px -7px #276873;
-            box-shadow: 0px 10px 14px -7px #276873;
+      font-family: "Montserrat", sans-serif;
+      color: rgb(0, 0, 0);
+      font-size: 32px;
+      font-weight: 200;
+      letter-spacing: 1.65px;
+      opacity: 0;
+      animation-name: floatin;
+      animation-duration: 1s;
+      animation-delay: 0.5s;
+      animation-fill-mode: forwards;
+      .call-me-button {
+        button {
+          -moz-box-shadow: 0px 10px 14px -7px #276873;
+          -webkit-box-shadow: 0px 10px 14px -7px #276873;
+          box-shadow: 0px 10px 14px -7px #276873;
+          background: -webkit-gradient(
+            linear,
+            left top,
+            left bottom,
+            color-stop(0.05, #599bb3),
+            color-stop(1, #408c99)
+          );
+          background: -moz-linear-gradient(top, #599bb3 5%, #408c99 100%);
+          background: -webkit-linear-gradient(top, #599bb3 5%, #408c99 100%);
+          background: -o-linear-gradient(top, #599bb3 5%, #408c99 100%);
+          background: -ms-linear-gradient(top, #599bb3 5%, #408c99 100%);
+          background: linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+          filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#599bb3', endColorstr='#408c99',GradientType=0);
+          background-color: #599bb3;
+          -webkit-border-radius: 8px;
+          -moz-border-radius: 8px;
+          border-radius: 8px;
+          display: inline-block;
+          cursor: pointer;
+          color: #ffffff;
+          font-family: Arial;
+          font-size: 16px;
+          font-weight: bold;
+          padding: 8px 15px;
+          text-decoration: none;
+          text-shadow: 0px 1px 0px #3d768a;
+          border: none;
+          &:hover {
             background: -webkit-gradient(
               linear,
               left top,
               left bottom,
-              color-stop(0.05, #599bb3),
-              color-stop(1, #408c99)
+              color-stop(0.05, #0f8df0),
+              color-stop(1, #0f8df0)
             );
-            background: -moz-linear-gradient(top, #599bb3 5%, #408c99 100%);
-            background: -webkit-linear-gradient(top, #599bb3 5%, #408c99 100%);
-            background: -o-linear-gradient(top, #599bb3 5%, #408c99 100%);
-            background: -ms-linear-gradient(top, #599bb3 5%, #408c99 100%);
-            background: linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
-            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#599bb3', endColorstr='#408c99',GradientType=0);
-            background-color: #599bb3;
-            -webkit-border-radius: 8px;
-            -moz-border-radius: 8px;
-            border-radius: 8px;
-            display: inline-block;
-            cursor: pointer;
-            color: #ffffff;
-            font-family: Arial;
-            font-size: 16px;
-            font-weight: bold;
-            padding: 8px 15px;
-            text-decoration: none;
-            text-shadow: 0px 1px 0px #3d768a;
-            border: none;
-            &:hover {
-              background: -webkit-gradient(
-                linear,
-                left top,
-                left bottom,
-                color-stop(0.05, #0f8df0),
-                color-stop(1, #0f8df0)
-              );
-              background: -moz-linear-gradient(top, #408c99 5%, #599bb3 100%);
-              background: -webkit-linear-gradient(
-                top,
-                #408c99 5%,
-                #599bb3 100%
-              );
-              background: -o-linear-gradient(top, #408c99 5%, #599bb3 100%);
-              background: -ms-linear-gradient(top, #408c99 5%, #599bb3 100%);
-              background: linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
-              filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#408c99', endColorstr='#599bb3',GradientType=0);
-              background-color: #408c99;
-            }
-            &:active {
-              position: relative;
-              top: 1px;
-            }
+            background: -moz-linear-gradient(top, #408c99 5%, #599bb3 100%);
+            background: -webkit-linear-gradient(top, #408c99 5%, #599bb3 100%);
+            background: -o-linear-gradient(top, #408c99 5%, #599bb3 100%);
+            background: -ms-linear-gradient(top, #408c99 5%, #599bb3 100%);
+            background: linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#408c99', endColorstr='#599bb3',GradientType=0);
+            background-color: #408c99;
+          }
+          &:active {
+            position: relative;
+            top: 1px;
+          }
 
-            @keyframes line {
-              0% {
-                background-position-x: 390px;
-              }
+          @keyframes line {
+            0% {
+              background-position-x: 390px;
             }
           }
         }
@@ -139,6 +133,7 @@
       .delivery-info {
         padding-top: 80px;
         padding-bottom: 80px;
+        padding-left: 40px;
 
         .delivery-title {
           font-family: "Lora", sans-serif;
@@ -211,8 +206,13 @@
       padding-top: 80px;
       padding-bottom: 80px;
       width: 80%;
+      .title {
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 30px;
+        text-transform: uppercase;
+      }
       .accordion {
-        width: 300px;
       }
     }
   }
@@ -246,7 +246,7 @@
               color: #2c2c2c;
             }
 
-            margin-bottom: 5px;
+            margin-bottom: 15px;
           }
           .description {
             font-family: "Montserrat";
@@ -271,19 +271,295 @@
   }
 }
 
+@media screen and (max-width: 1100px) {
+  .main {
+    .main-service-text {
+      height: 500px;
+      .text {
+        width: 45%;
+        top: 10%;
+      }
+    }
+    .about {
+      .my-container {
+        .about-description-container {
+          .about-description-text {
+            width: 45%;
+          }
+        }
+      }
+    }
+    .map-contacts {
+      padding-left: 30px;
+      padding-right: 30px;
+      .my-container {
+        .contacts {
+          width: 30%;
+        }
+      }
+    }
+    .delivery {
+      .my-container {
+        background-position-x: calc(50% + 280px);
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 1000px) {
   .main {
-    .img-main {
-      width: 900px;
-      .main-service-text {
-        .text {
-          font-size: 30px;
+    .main-service-text {
+      height: 420px;
+      .text {
+        width: 43%;
+        top: 7%;
+      }
+    }
+    .delivery {
+      .my-container {
+        background-position-x: calc(50% + 250px);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .main {
+    .about {
+      .my-container {
+        .about-description-container {
+          .about-description-text {
+            width: 37%;
+            padding-top: 25px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 865px) {
+  .main {
+    .main-service-text {
+      height: 390px;
+      .text {
+        top: 3%;
+        font-size: 30px;
+      }
+    }
+    .delivery {
+      .my-container {
+        background-position-x: calc(50% + 200px);
+        .delivery-info {
+          .delivery-item {
+            max-width: 260px;
+          }
+        }
+      }
+    }
+    .map-contacts {
+      .my-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        .map {
+          width: 100%;
+
+          iframe {
+            width: 100% !important;
+          }
+        }
+        .contacts {
+          width: 100%;
         }
       }
     }
   }
 }
 
+@media screen and (max-width: 815px) {
+  .main {
+    .about {
+      .my-container {
+        .about-description-container {
+          .about-description-img {
+            width: 56%;
+          }
+          .about-description-text {
+            width: 37%;
+            padding-top: 25px;
+          }
+        }
+      }
+    }
+    .delivery {
+      .my-container {
+        background-position-x: calc(50% + 160px);
+        .delivery-info {
+          .delivery-item {
+            max-width: 260px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 775px) {
+  .main {
+    .main-service-text {
+      height: 390px;
+      .text {
+        top: 0%;
+        font-size: 28px;
+      }
+    }
+
+    .about {
+      .my-container {
+        .about-description-container {
+          flex-direction: column;
+          .about-description-text {
+            width: 75%;
+            padding-top: 112px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 675px) {
+  .main {
+    .delivery {
+      .my-container {
+        .delivery-info {
+          padding-top: 40px;
+          padding-bottom: 40px;
+          padding-left: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 635px) {
+  .main {
+    .main-service-text {
+      height: 350px;
+      .text {
+        font-size: 27px;
+      }
+    }
+    .about {
+      padding-top: 40px;
+      padding-bottom: 40px;
+      .my-container {
+        .about-description-container {
+          .about-description-img {
+            width: unset;
+          }
+        }
+      }
+    }
+    .service {
+      padding-top: 35px;
+      padding-bottom: 35px;
+    }
+    .delivery {
+      .my-container {
+        background-position-x: calc(50% + 150px);
+      }
+    }
+
+    .map-contacts {
+      padding-bottom: 30px;
+      .my-container {
+        flex-direction: column-reverse;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 635px) {
+  .main {
+    .main-service-text {
+      height: 280px;
+      .text {
+        font-size: 20px;
+        .call-me-button {
+          button {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 485px) {
+  .main {
+    .about {
+      .my-container {
+        .about-description-container {
+          .about-description-text {
+            padding-top: 0;
+          }
+        }
+      }
+    }
+    .delivery {
+      .my-container {
+        background-image: unset;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 478px) {
+  .main {
+    .main-service-text {
+      height: 264px;
+      .text {
+        font-size: 17px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .main {
+    .main-service-text {
+      height: 80vh;
+      background-position-x: unset;
+      .text {
+        padding: 30px 5px 30px 5px;
+        top: 12%;
+        color: floralwhite;
+        background-color: rgb(0 0 0 / 30%);
+        width: 100%;
+        font-size: 23px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .main {
+    width: 104%;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .main {
+    width: 106%;
+  }
+}
+
+
+@media screen and (max-width: 320px) {
+  .main {
+    width: 113%;
+  }
+}
 @keyframes floatin {
   from {
     transform: translateY(-24px);

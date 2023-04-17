@@ -5,7 +5,7 @@
   font-weight: 500;
   .my-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     .footer-menu {
       .menu-list {
@@ -79,7 +79,6 @@
 @media screen and (max-width: 1000px) {
   .footer {
     .my-container {
-      width: 900px;
       .footer-menu {
         .menu-list {
           margin-left: 0px;
@@ -89,3 +88,28 @@
     }
   }
 }
+
+@media screen and (max-width: 710px) {
+    .footer {
+      .my-container {
+        .footer-menu {
+          .menu-list {
+            nav ul {
+              li {
+                margin-right: 0;
+                &:not(:last-child) {
+                  margin-right: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 635px) {
+    .footer{
+        display: none;
+    }
+  }

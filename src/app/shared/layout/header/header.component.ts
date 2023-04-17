@@ -1,21 +1,27 @@
-import { Component, OnInit } from '@angular/core';
-import { ModalService } from '../../services/modal.service';
+import {
+  AfterViewInit,
+  Component,
+  ElementRef,
+  OnInit,
+  ViewChild,
+} from '@angular/core';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+  styleUrls: ['./header.component.scss'],
 })
-export class HeaderComponent implements OnInit{
-constructor(      private modalService: ModalService
-  ){
-  
-}
-ngOnInit():void{
-    
-}
+export class HeaderComponent implements OnInit, AfterViewInit {
+  @ViewChild('menu__toggle') toggle!: ElementRef;
 
-open() {
-  this.modalService.open();
-}
+
+  constructor() {}
+  ngOnInit(): void {}
+
+  close() {
+    this.toggle.nativeElement.checked = false;
+  }
+
+  ngAfterViewInit(): void {
+  }
 }

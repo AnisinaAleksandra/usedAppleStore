@@ -6,17 +6,8 @@
     init="false"
     pagination="true"
   >
-    <swiper-slide class="swiper-slide">
-      <img src="assets/images/macProInBlack.jpg" />
-    </swiper-slide>
-    <swiper-slide class="swiper-slide">
-      <img src="assets/images/usedIphones.jpg" />
-    </swiper-slide>
-    <swiper-slide class="swiper-slide">
-      <img src="assets/images/macProInBox.jpg" />
-    </swiper-slide>
-    <swiper-slide class="swiper-slide">
-      <img src="assets/images/appleel.jpg" />
+    <swiper-slide *ngFor="let slide of slideList" class="swiper-slide">
+      <img src="assets/images/{{slide}}" />
     </swiper-slide>
     <!-- <div class="swiper-pagination"></div> -->
   </swiper-container>

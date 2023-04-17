@@ -19,13 +19,14 @@ import { SwiperDirective } from '../../directives/swiper.directive';
 })
 export class CubeComponent  implements OnInit, AfterViewInit{
 
+  slideList=["macProInBlack.jpg", "usedIphones.jpg", "macProInBox.jpg", "appleel.jpg"]
   @ViewChild('swiper') swiperRef: ElementRef<HTMLElement & { swiper?: Swiper } & { initialize: () => void }> | undefined;
   swiper?: Swiper;
 
   public config: SwiperOptions = {
       modules:[EffectCube, Pagination, Autoplay],
       effect: "cube",
-      speed: 3000,
+      speed: 2000,
       grabCursor: true,
       cubeEffect: {
         shadow: true,
@@ -34,7 +35,7 @@ export class CubeComponent  implements OnInit, AfterViewInit{
         shadowScale: 0.94,
       },
       autoplay: {
-        delay: 3500,
+        delay: 1500,
         disableOnInteraction: true
       },
       pagination: {
@@ -50,27 +51,5 @@ export class CubeComponent  implements OnInit, AfterViewInit{
 
   ngAfterViewInit(): void {
 
-    // const swiperEl = Object.assign(this.swiperRef!.nativeElement, {
-    //   modules:[EffectCube, Pagination, Autoplay],
-    //   effect: "cube",
-    //   speed: 4000,
-    //   grabCursor: true,
-    //   cubeEffect: {
-    //     shadow: true,
-    //     slideShadows: true,
-    //     shadowOffset: 20,
-    //     shadowScale: 0.94,
-    //   },
-    //   autoplay: {
-    //     delay: 3500,
-    //     disableOnInteraction: true
-    //   },
-    //   pagination: {
-    //     el: ".swiper-pagination",
-    //   },
-    // });
-    // swiperEl.initialize();
-
-    // this.swiper = this.swiperRef!.nativeElement.swiper;
   }
 }

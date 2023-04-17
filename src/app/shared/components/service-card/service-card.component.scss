@@ -21,11 +21,11 @@ body {
   overflow: hidden;
   border-style: solid;
   border-width: 2px;
-position: relative;
+  position: relative;
   transition: transform 500ms ease;
   height: 385px;
   width: 330px;
-margin: 12px;
+  margin: 12px;
   &:hover,
   &:focus-within {
     transform: scale(1.13);
@@ -124,5 +124,18 @@ margin: 12px;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
     transition-delay: 0ms !important;
+  }
+}
+
+
+@media screen and (max-width: 635px) {
+  .my-card{
+    height: 350px;
+    width: 250px;
+    .my-card-content{
+      .my-card-title{
+        width: min-content;
+      }
+    }
   }
 }

@@ -18,3 +18,30 @@
     }
   }
 }
+
+
+@media screen and (max-width: 485px) {
+  .cube-container {
+    width: 380px;
+    height: 350px;
+    .swiper {
+width: 360px;
+    }}
+}
+
+
+@media screen and (max-width: 390px) {
+  .cube-container {
+    width: 345px;
+    height: 295px;
+    .swiper {
+width: 100%;
+    }}
+}
+
+@media screen and (max-width: 360px) {
+  .cube-container {
+    width: 330px;
+    height: 270px;
+    }
+}
