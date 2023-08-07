@@ -7,7 +7,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Меню настроено со скролом, есть анимация при наведении
 
-<img src="./src/assets/images/adaptive.jpeg" style="max-width: 40%;" alt="adaptive">
+Страница адаптивна под телефоны
+<img src="./src/assets/images/adaptive.jpeg" style="width: 40%;" alt="adaptive">
 
 
 # Модальное окно
