@@ -12,9 +12,9 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 <img src="./src/assets/images/adaptive.jpeg" style="width: 40%;" alt="adaptive">
 
 
-# Модальное окно
+## Модальное окно
 
-<img src="./src/assets/images/modal.png"  width="80%" height="80%"   alt="modal">
+<img src="./src/assets/images/modal.png"  width="60%" height="60%"   alt="modal">
 
 - форма отправляется сразу на телефон в телеграм-бот
 - валидация формы перед отправкой
