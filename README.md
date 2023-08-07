@@ -5,9 +5,10 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 <img src="./src/assets/images/mainPart.png" width="80%" height="80%" alt="main_page">
 
-Меню настроено со скролом, есть анимация при наведении
+- Меню настроено со скролом, есть анимация при наведении
 
-Страница адаптивна под телефоны
+- Страница адаптивна под телефоны
+
 <img src="./src/assets/images/adaptive.jpeg" style="width: 40%;" alt="adaptive">
 
 
