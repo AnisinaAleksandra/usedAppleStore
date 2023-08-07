@@ -1,6 +1,31 @@
+https://anisinaaleksandra.github.io/usedAppleStore/
 # AppleStoreFront
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.4.
+
+<img src=".src/assets/images/mainPart.png" alt="main_page">
+
+Меню настроено со скролом, есть анимация при наведении
+
+<img src=".src/assets/images/adaptive.jpeg" alt="modal">
+
+
+# Модальное окно
+
+<img src=".src/assets/images/modal.png" alt="modal">
+
+- форма отправляется сразу на телефон в телеграм-бот
+- валидация формы перед отправкой
+- подсветка ошибок полей с сообщениями
+
+
+<img src=".src/assets/images/service.png" alt="service_page">
+<img src=".src/assets/images/aboutPart.png" alt="service_page">
+
++ стили scss
++ использованы переменные в стилях
+
+
 
 ## Development server
 
@@ -26,6 +51,4 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 # usedAppleStore
-# usedAppleStore
-# usedAppleStore
-# usedAppleStore
+
