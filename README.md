@@ -7,20 +7,20 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Меню настроено со скролом, есть анимация при наведении
 
-<img src=".src/assets/images/adaptive.jpeg" alt="modal">
+<img src="./src/assets/images/adaptive.jpeg" alt="modal">
 
 
 # Модальное окно
 
-<img src=".src/assets/images/modal.png" alt="modal">
+<img src="./src/assets/images/modal.png" alt="modal">
 
 - форма отправляется сразу на телефон в телеграм-бот
 - валидация формы перед отправкой
 - подсветка ошибок полей с сообщениями
 
 
-<img src=".src/assets/images/service.png" alt="service_page">
-<img src=".src/assets/images/aboutPart.png" alt="service_page">
+<img src="./src/assets/images/service.png" alt="service_page">
+<img src="./src/assets/images/aboutPart.png" alt="service_page">
 
 + стили scss
 + использованы переменные в стилях
