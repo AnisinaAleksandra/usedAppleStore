@@ -44,6 +44,7 @@ export class ModalComponent implements OnInit {
 
   ngOnInit() {
     this.display$ = this.modalService.watch();
+    console.log(this.display$)
   }
 
   close() {
@@ -70,8 +71,16 @@ export class ModalComponent implements OnInit {
             this.modalTitle = 'Спасибо за вашу заявку!';
             this.titleButton = 'Ок';
             this.isOrderSendeng = true;
+            console.log(this)
           }
         });
+    }
+  }
+  clickBtn(titleButton:string){
+    if(titleButton === 'Заказать'){
+     return this.sendOrder();
+    }else{
+      return this.close()
     }
   }
 }

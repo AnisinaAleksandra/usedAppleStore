@@ -13,6 +13,8 @@ export class ServiceCardComponent {
   };
   imageFolderPath: string = '';
   ngOnInit(): void {
-    this.imageFolderPath = `assets/images/${this.item!.image}`;
+    this.imageFolderPath = `background-image: url(assets/images/${this.item!.image})`;
+    console.log(this.imageFolderPath);
+    
   }
 }
