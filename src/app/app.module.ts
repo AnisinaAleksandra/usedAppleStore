@@ -37,7 +37,17 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     
   ],
   exports:[MainComponent],
-  imports: [BrowserModule, AppRoutingModule, SharedModule,CubeComponent, HttpClientModule, MdbAccordionModule, MdbCarouselModule, MdbCheckboxModule, MdbCollapseModule, MdbDropdownModule, MdbFormsModule, MdbModalModule, MdbPopoverModule, MdbRadioModule, MdbRangeModule, MdbRippleModule, MdbScrollspyModule, MdbTabsModule, MdbTooltipModule, MdbValidationModule, BrowserAnimationsModule],
+  imports: [BrowserModule, 
+    AppRoutingModule,
+     SharedModule,CubeComponent, 
+     HttpClientModule, 
+     MdbAccordionModule, MdbCarouselModule, 
+     MdbCheckboxModule, MdbCollapseModule, 
+     MdbDropdownModule, MdbFormsModule, MdbModalModule, 
+     MdbPopoverModule, MdbRadioModule, MdbRangeModule, 
+     MdbRippleModule, MdbScrollspyModule, MdbTabsModule,
+      MdbTooltipModule, MdbValidationModule, 
+      BrowserAnimationsModule],
   providers: [],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
